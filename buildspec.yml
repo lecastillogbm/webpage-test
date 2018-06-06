@@ -22,3 +22,4 @@ artifacts:
   files:
     - 'src/*'
   discard-paths: yes
+  base-directory: 'src'
