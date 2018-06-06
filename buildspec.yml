@@ -1,23 +1,23 @@
 version: 0.2
 env:
   variables:
-    KEY_ONE: "value"
-    key_TWO: "value"
+    SOURCE_FILE: "value"
 phases:
   install:
     commands:
-     
+     - apt-get update -y
+     - echo Nothing to do in install Step `date`.
   pre_build:
     commands:
-      
+     - echo Nothing to do in pre_build Step `date`.
+     - npm install
   build:
     commands:
-
+     - echo Nothing to do in build Step `date`.
+     - npm build
   post_build:
     commands:
-
+     - echo Nothing to do in post_build Step `date`.
 artifacts:
   files:
-    - deploy.zip
-  discard-paths: yes
-  base-directory: build
+    - 'src/*'
