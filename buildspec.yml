@@ -14,12 +14,10 @@ phases:
   build:
     commands:
      - echo Nothing to do in build Step `date`.
-     - npm build
+     - npm test
   post_build:
     commands:
      - echo Nothing to do in post_build Step `date`.
 artifacts:
   files:
     - 'src/*'
-  discard-paths: yes
-  base-directory: 'src'
