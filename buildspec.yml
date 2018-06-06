@@ -14,7 +14,6 @@ phases:
   build:
     commands:
      - echo Nothing to do in build Step `date`.
-     - echo TODO: npm test
      - npm build
   post_build:
     commands:
