@@ -1,0 +1,23 @@
+version: 0.2
+env:
+  variables:
+    KEY_ONE: "value"
+    key_TWO: "value"
+phases:
+  install:
+    commands:
+     
+  pre_build:
+    commands:
+      
+  build:
+    commands:
+
+  post_build:
+    commands:
+
+artifacts:
+  files:
+    - deploy.zip
+  discard-paths: yes
+  base-directory: build
