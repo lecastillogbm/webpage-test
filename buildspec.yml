@@ -20,4 +20,4 @@ phases:
      - echo Nothing to do in post_build Step `date`.
 artifacts:
   files:
-    - '**/*'
+    - 'src/*'
